@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
 
-  config.vm.hostname = "e4fsprogs-berkshelf"
+  config.vm.hostname = "e2fsprogs-berkshelf"
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "centos-6.3-x86_64"
@@ -70,17 +70,8 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
 
   config.vm.provision :chef_solo do |chef|
-    chef.json = {
-      :mysql => {
-        :server_root_password => 'rootpass',
-        :server_debian_password => 'debpass',
-        :server_repl_password => 'replpass'
-      }
-    }
-
     chef.run_list = [
-        "recipe[minitest-handler::default]",
-        "recipe[e4fsprogs::default]"
+        "recipe[e2fsprogs::default]"
     ]
   end
 end
