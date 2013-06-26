@@ -2,7 +2,7 @@
 
 Description
 ===========
-Installs the e2fsprogs package
+Installs the e2fsprogs package.
 
 Requirements
 ============
