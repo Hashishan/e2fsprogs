@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/RallySoftware-cookbooks/e2fsprogs.png?branch=master)](https://travis-ci.org/RallySoftware-cookbooks/e2fsprogs)
-
 Description
 ===========
 Installs the e2fsprogs package.
